@@ -29,6 +29,31 @@ h2 {
     font-weight: 300;
 }
 
+main {
+    display: grid;
+    gap: 0.5em;
+}
+
+form {
+    display: grid;
+}
+
+@media (width>420px) {
+    form {
+        grid-template-columns: 1fr auto;
+    }
+}
+
+input,
+button {
+    font-size: 1.5em;
+    padding-inline: 0.5rem;
+}
+
+p.count {
+    padding-inline: 0.5rem;
+}
+
 ul {
     list-style: none;
     background-color: hsl(200 50% 50%);

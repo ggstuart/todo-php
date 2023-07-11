@@ -8,6 +8,7 @@
     <?php readfile('views/header.phtml'); ?>
 
     <main>
+        <?php readfile('forms/create-todo-list.phtml'); ?>
         <ul>
         <?php
         foreach ($todoLists as $title) {
@@ -15,6 +16,7 @@
         }
         ?>
         </ul>
+        <p class="count">Found <?php echo count($todoLists); ?> lists</p>
     </main>
 
     <?php readfile('views/footer.phtml'); ?>
