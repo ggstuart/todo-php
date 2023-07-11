@@ -13,6 +13,12 @@ body {
     font-weight: 200;
     max-width: 800px;
     margin-inline: auto;
+    background-image: url(to-do-list.svg);
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+    min-height: 100dvh;
 }
 
 h1 {
