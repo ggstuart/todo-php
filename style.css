@@ -23,6 +23,8 @@ h2 {
 ul {
     list-style: none;
     background-color: hsl(200 50% 50%);
+    display: grid;
+    gap: 1px;
 }
 
 li {
@@ -44,4 +46,8 @@ p {
 header,
 li {
     overflow: auto;
+}
+
+footer {
+    text-align: right;
 }
