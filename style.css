@@ -16,3 +16,20 @@ ul {
 li {
     backdrop-filter: brightness(0.6);
 }
+
+header,
+li,
+footer {
+    padding-inline: 0.5rem;
+}
+
+h1,
+h2,
+p {
+    margin-block: 0.5em;
+}
+
+header,
+li {
+    overflow: auto;
+}
