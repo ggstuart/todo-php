@@ -1,7 +1,6 @@
 <?php
-$todoLists = [
-    'HTML',
-    'CSS',
-    'PHP'
-];
+include 'setup.php';
+
+$todoLists = $_SESSION['lists'];
+
 include 'views/index.phtml';
