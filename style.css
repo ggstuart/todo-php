@@ -10,7 +10,7 @@ li.todo-list > a:hover > h2 {
     text-decoration: underline;
 }
 
-li.todo-list > a {
+a {
     color: inherit;
     text-decoration: none;
 }
