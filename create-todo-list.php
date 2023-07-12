@@ -1,8 +1,8 @@
 <?php
-session_start();
+include 'setup.php';
 
 if (isset($_POST['title'])) {
-    $_SESSION['lists'][] = $_POST['title'];
+    createTodoList($_POST['title']);
 }
 
 header("Location: /");

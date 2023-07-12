@@ -1,6 +1,6 @@
 <?php
 include 'setup.php';
 
-$todoLists = $_SESSION['lists'];
+$todoLists = getTodoLists();
 
 include 'views/index.phtml';

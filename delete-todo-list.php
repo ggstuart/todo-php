@@ -1,8 +1,8 @@
 <?php
-session_start();
+include 'setup.php';
 
 if (isset($_POST['list-id'])) {
-    array_splice($_SESSION['lists'], $_POST['list-id'], 1);
+    deleteTodoList($_POST['list-id']);
 }
 
 header("Location: /");
