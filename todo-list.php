@@ -1,6 +1,7 @@
 <?php
 include 'setup.php';
 
-$todoList = getTodoList($_GET['id']);
+$listId = $_GET['id'];
+$todoList = getTodoList($listId);
 
 include 'views/todo-list.phtml';

@@ -11,7 +11,10 @@ function getTodoLists() {
 }
 
 function createTodoList(string $title) {
-    $_SESSION['lists'][] = $title;
+    $_SESSION['lists'][] = [
+        'title'=>$title,
+        'items'=>[]
+    ];
 }
 
 function deleteTodoList(int $id) {

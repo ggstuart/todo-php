@@ -11,7 +11,7 @@
         <?php readfile('forms/create-todo-list.phtml'); ?>
         <ul>
         <?php
-        foreach ($todoLists as $id => $title) {
+        foreach ($todoLists as $id => $todoList) {
             include 'views/todo-list-summary.phtml';
         }
         ?>
