@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<?php include "views/head.phtml"; ?>
+
+<body>
+
+    <?php include "views/header.phtml"; ?>
+
+    <main>
+        <article class="todo-list" aria-labelledby="title">
+            <header>
+                <h2 id="title"><?= $todoList['title']; ?></h2>
+                <p><?= count($todoList['items']); ?> items</p>
+            </header>
+            <?php include 'forms/create-todo-item.phtml'; ?>
+
+            <ul>
+                <?php
+                foreach ($todoList['items'] as $itemId => $todoItem) {
+                    include 'views/todo-item.phtml';
+                }
+                ?>
+            </ul>
+        </article>
+    </main>
+
+    <?php include "views/footer.phtml"; ?>
+
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+<?php $id = "item-{$todoItem['item_id']}"; ?>
+<form class="update-todo-item" aria-label="todo item state" action="update-todo-item.php" method="post">
+    <input type="checkbox" name="done" id="<?= $id; ?>"<?php if($todoItem['done']) echo ' checked'; ?>>
+    <label for="<?= $id; ?>"><?= $todoItem['label']; ?></label>
+    <input type="hidden" name="item-id" value="<?= $todoItem['item_id'] ?>">
+    <input type="hidden" name="list-id" value="<?= $todoItem['list_id'] ?>">
+</form>

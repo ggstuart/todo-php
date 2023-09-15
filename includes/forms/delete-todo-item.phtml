@@ -1,0 +1,5 @@
+<form id="delete-todo-item" aria-label="delete this todo-item" action="delete-todo-item.php" method="post">
+    <input type="hidden" name="item-id" value="<?= $todoItem['item_id'] ?>">
+    <input type="hidden" name="list-id" value="<?= $todoItem['list_id'] ?>">
+    <button class="delete" aria-label="delete">&times;</button>
+</form>

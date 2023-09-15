@@ -1,0 +1,5 @@
+<form id="create-todo-item" aria-label="create a new todo item" action="create-todo-item.php" method="post">
+    <input autofocus type="text" name="label" placeholder="add a new item" aria-label="item label">
+    <input type="hidden" name="list-id" value=<?=$todoList['list_id'];?>>
+    <button>create</button>
+</form>

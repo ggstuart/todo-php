@@ -1,6 +1,6 @@
 <?php
 include 'setup.php';
 
-$todoLists = getTodoLists();
+$todoLists = $store->getTodoLists();
 
 include 'views/index.phtml';

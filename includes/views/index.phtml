@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<?php include 'views/head.phtml'; ?>
+
+<body>
+
+    <?php include 'views/header.phtml'; ?>
+
+    <main>
+        <?php include 'forms/create-todo-list.phtml'; ?>
+        <ul>
+        <?php
+        foreach ($todoLists as $todoList) {
+            include 'views/todo-list-summary.phtml';
+        }
+        ?>
+        </ul>
+        <p class="count">Found <?= $todoLists->num_rows; ?> lists</p>
+    </main>
+
+    <?php include 'views/footer.phtml'; ?>
+
+</body>
+
+</html>

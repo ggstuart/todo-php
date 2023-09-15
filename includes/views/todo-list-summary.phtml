@@ -1,7 +1,7 @@
 <li class="todo-list">
-    <a href="todo-list.php?id=<?= $id; ?>">
-        <span>todo-list</span>
+    <a href="todo-list.php?id=<?= $todoList['list_id']; ?>">
         <h2 class="title"><?= $todoList['title']; ?></h2>
+        <span><?= $todoList['item_count']; ?> items</span>
     </a>
     <?php include 'forms/delete-todo-list.phtml'; ?>
 </li>
